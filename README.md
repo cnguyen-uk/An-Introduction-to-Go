@@ -1,4 +1,4 @@
-# An Introduction to Go (Golang)
+# An Introduction to Go
 *A compact introduction to using Go.*
 
 Go, or Golang, is a programming language designed by Google employees. It is a simple high performance language designed to make code extremely easy to read and develop; has modern features like garbage collection and built-in concurrency; but misses some of the functionality that other languages have (such as OOP).
