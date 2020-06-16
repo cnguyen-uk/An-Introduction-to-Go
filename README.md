@@ -13,9 +13,9 @@ There are plenty of good, comprehensive guides to using Go available online. The
   * [Importing Multiple Packages](#importing-multiple-packages)
   * [Comments](#comments)
 - [Variables and Types](#variables-and-types)
-  * [Constants](#constants)
   * [Types](#types)
   * [Variables](#variables)
+  * [Constants](#constants)
 - [The fmt Package](#the-fmt-package)
   * [Printing](#printing)
   * [Sprinting](#sprinting)
@@ -88,14 +88,6 @@ Block comments start with `/*` and end with `*/`.
 
 Go is statically-typed, so variables need to be given a type before usage.
 
-### Constants
-
-Constants can’t be changed later in the program, which allows the developer to highlight their intention.
-
-```Go
-const gravity = 9.80665
-```
-
 ### Types
 
 See the [documentation on types](https://golang.org/ref/spec#Types). Commonly used types for typical programming are the Boolean, numeric, and string types.
@@ -136,6 +128,14 @@ var variableName1, variableName2 = value1, value2
 ```
 
 If a variable is declared but not initialised, then Go will give it a default zero value (depending on type). Not using a variable will throw an error (to catch unused code).
+
+### Constants
+
+Constants can’t be changed later in the program, which allows the developer to highlight their intention. These are declared similarly to variables, but can only be character, string, boolean or numeric types.
+
+```Go
+const gravity = 9.80665
+```
 
 ## The fmt Package
 
