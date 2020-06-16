@@ -21,7 +21,7 @@ There are plenty of good, comprehensive guides to using Go available online. The
   * [Sprinting](#sprinting)
   * [Getting User Input](#getting-user-input)
 - [Conditionals](#conditionals)
-  * [The if, else if and else Statements](#the-if--else-if-and-else-statements)
+  * [The `if`, `else if` and `else` Statements](#the-if--else-if-and-else-statements)
   * [Scoped Short Declaration Statement](#scoped-short-declaration-statement)
   * [The `switch` Statement](#the-switch-statement)
 - [Loops](#loops)
@@ -196,7 +196,7 @@ This stores the user’s input as the variable `response`, which we can do anyth
 
 ## Conditionals
 
-### The if, else if and else Statements
+### The `if`, `else if` and `else` Statements
 
 As usual, a block of code is executed given that a condition is true.
 
