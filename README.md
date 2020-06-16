@@ -233,7 +233,7 @@ switch x {
 case 5:
   fmt.Println("This is the maximum achievable!")
 case 4:
-  fmt.Println("This is the almost maximum achievable!")
+  fmt.Println("This is almost the maximum achievable!")
 default:
   fmt.Println("This is quite average.")
 }
