@@ -228,6 +228,7 @@ if x := someNumber; x > 100 {
 We can use a `switch` statement to handle cases more elegantly.
 
 ```Go
+x := someNumber
 switch x {
 case 5:
   fmt.Println("This is the maximum achievable!")
