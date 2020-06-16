@@ -3,7 +3,7 @@
 
 Go, or Golang, is a programming language designed by Google employees. It is a simple high performance language designed to make code extremely easy to read and develop; has modern features like garbage collection and built-in concurrency; but misses some of the functionality that other languages have (such as OOP).
 
-There are plenty of good, comprehensive guides to using Go available online. The aim of this guide is the opposite - to present Go in a compact way for someone who is already familiar with at least one programming language.
+There are plenty of good, comprehensive guides to using Go available online, such as [The Official Go Language Specification](https://golang.org/ref/spec). The aim of this guide is the opposite - to present Go in a compact way for someone who is already familiar with at least one programming language.
 
 ## Table of Contents
 
@@ -196,6 +196,8 @@ This stores the user’s input as the variable `response`, which we can do anyth
 
 ## Conditionals
 
+Go has the usual comparison and logical operators: `==`, `!=`, `<`, `>`, `<=`, `>=`, `&&`, `||`, `!`.
+
 ### The `if`, `else if` and `else` Statements
 
 As usual, a block of code is executed given that a condition is true.
@@ -210,8 +212,6 @@ if x > 100 {
   fmt.Println("We have a small number")
 }
 ```
-
-Go has the usual comparison and logical operators: `==`, `!=`, `<`, `>`, `<=`, `>=`, `&&`, `||`, `!`.
 
 ### Scoped Short Declaration Statement
 
