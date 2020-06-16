@@ -16,14 +16,14 @@ There are plenty of good, comprehensive guides to using Go available online. The
   * [Types](#types)
   * [Variables](#variables)
   * [Constants](#constants)
-- [The fmt Package](#the-fmt-package)
+- [The `fmt` Package](#the-fmt-package)
   * [Printing](#printing)
   * [Sprinting](#sprinting)
   * [Getting User Input](#getting-user-input)
 - [Conditionals](#conditionals)
   * [The if, else if and else Statements](#the-if--else-if-and-else-statements)
   * [Scoped Short Declaration Statement](#scoped-short-declaration-statement)
-  * [The switch Statement](#the-switch-statement)
+  * [The `switch` Statement](#the-switch-statement)
 - [Loops](#loops)
 - [Randomisation and Seeding](#randomisation-and-seeding)
 - [Functions](#functions)
@@ -137,7 +137,7 @@ Constants can’t be changed later in the program, which allows the developer to
 const gravity = 9.80665
 ```
 
-## The fmt Package
+## The `fmt` Package
 
 The [`fmt` package](https://golang.org/pkg/fmt/) provides familiar data printing and formatting capabilities.
 
@@ -223,7 +223,7 @@ if x := someNumber; x > 100 {
 }
 ```
 
-### The switch Statement
+### The `switch` Statement
 
 We can use a `switch` statement to handle cases more elegantly.
 
