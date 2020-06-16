@@ -117,7 +117,9 @@ variableName := value
 var variableName = value
 ```
 
-The first way explicitly declares the variable and its type before initialising it by assigning a value to it. The second way uses the short declaration operator `:=`, which allows Go to infer its type based on the value provided. The third way is alternate syntax for the second way. We may also define multiple variables of the same type in a single line.
+The first way explicitly declares the variable and its type before initialising it by assigning a value to it. The second way uses the short declaration operator `:=`, which allows Go to infer its type based on the value provided. The third way is alternate syntax for the second way.
+
+We may also define multiple variables of the same type in a single line.
 
 ```Go
 var variableName1, variableName2 type
