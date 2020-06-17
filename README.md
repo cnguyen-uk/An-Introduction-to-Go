@@ -143,7 +143,7 @@ The [`fmt` package](https://golang.org/pkg/fmt/) provides familiar data printing
 
 ### Printing
 
-Here are some commonly used print functions.
+Here are some commonly used print functions:
 
 ```Go
 fmt.Println("Hello everyone", "in the world")
@@ -185,7 +185,7 @@ words := fmt.Sprintf("The best food is %v from %v", verb1, verb2)
 
 ### Getting User Input
 
-The following syntax structure allows for us to ask for user input.
+The following syntax structure allows for us to ask for user input:
 
 ```Go
 var response string
@@ -253,7 +253,7 @@ for i := 1; i < 8; i++ {  // Shorthand for i += 1
 
 ## Randomisation and Seeding
 
-One way to generate random numbers in Go is as follows.
+One way to generate random numbers in Go is as follows:
 
 ```Go
 package main
