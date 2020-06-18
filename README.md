@@ -148,8 +148,10 @@ Here are some commonly used print functions:
 ```Go
 fmt.Println("Hello everyone", "in the world")
 fmt.Println("Goodbye")
-// Prints: Hello everyone in the world
-//         Goodbye
+/*
+Prints: Hello everyone in the world
+        Goodbye
+*/
 ```
 
 ```Go
