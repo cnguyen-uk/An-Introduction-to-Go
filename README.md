@@ -51,7 +51,7 @@ The first way compiles `file.go`, which is stored in an executable file, and the
 
 ### Basic Go Structure
 
-Go programs are read as normal – from top to bottom, left to right.
+Go programs are read as normal - from top to bottom, left to right.
 
 ```Go
 package main
@@ -65,7 +65,7 @@ func main() {
 
 Almost all Go programs will use the `main` package since it will create an executable file. It is a special package containing the `main()` function which will execute any code inside of its scope.
 
-The `fmt` package allows for some C type functionality in formatting I/Os. Functions are defined using the func keyword. Both of these will be discussed later on.
+The `fmt` package allows for some C type functionality in formatting I/Os. Functions are defined using the `func` keyword. Both of these will be discussed later on.
 
 ### Importing Multiple Packages
 
@@ -243,7 +243,7 @@ The `default` keyword deals with the rest of the cases.
 
 ## Loops
 
-Go has only one looping construct – the `for` loop. The basic syntax is as follows:
+Go has only one looping construct - the `for` loop. The basic syntax is as follows:
 
 ```Go
 for i := 1; i < 8; i++ {  // Shorthand for i += 1
@@ -305,7 +305,7 @@ fmt.Println(&x)  // Prints the address of x in hexadecimal.
 
 ### Pointers
 
-A variable which stores an address is called a pointer. These allow us to access the address of a variable. A pointer can be declared and initialised using the `*` operator.
+A variable which stores an address is called a *pointer*. These allow us to access the address of a variable. A pointer can be declared and initialised using the `*` operator.
 
 ```Go
 var variableName *type
@@ -322,7 +322,7 @@ var variableName = &value
 
 ### Dereferencing
 
-We can change the value stored in an address to a different value. We can prefix the `*` operator to a pointer to assign a new value to that address. This is called dereferencing or indirecting.
+We can change the value stored in an address to a different value. We can prefix the `*` operator to a pointer to assign a new value to that address. This is called *dereferencing* or *indirecting*.
 
 ```Go
 x := 152
