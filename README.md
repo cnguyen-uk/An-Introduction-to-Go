@@ -302,7 +302,7 @@ To find the address of a variable, we can prefix it with the `&` operator.
 
 ```Go
 x := 152
-fmt.Println(&x)  // Prints the address of x in hexadecimal.
+fmt.Println(&x)  // Prints the address of x in hexadecimal
 ```
 
 ### Pointers
@@ -330,7 +330,7 @@ We can change the value stored in an address to a different value. We can prefix
 x := 152
 pointerForNumber := &x
 *pointerForNumber = 7
-fmt.Println(x)  // Prints: 7.
+fmt.Println(x)  // Prints: 7
 ```
 
 Through dereferencing, we can change the value of a variable in a different scope.
@@ -343,6 +343,6 @@ func addTen(pointerForNumber *int) {
 func main() {
   x := 53
   addTen(&x)
-  fmt.Println(x)  // Prints: 63.
+  fmt.Println(x)  // Prints: 63
 }
 ```
