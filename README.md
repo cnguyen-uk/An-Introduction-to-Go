@@ -164,7 +164,7 @@ fmt.Print("Hello")
 fmt.Printf("The best food is %v from %v", verb1, verb2)
 /*
 Prints as expected, but with the %v verbs replaced by verb1 and verb2,
-in that order. Other verbs apart from %v exist and can be seen in the
+in that order.  Other verbs apart from %v exist and can be seen in the
 documentation.
 */
 ```
