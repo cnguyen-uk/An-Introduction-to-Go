@@ -73,8 +73,8 @@ To import multiple packages we can use multiple lines with import statements. Or
 
 ```Go
 import(
-  "package1"
-  p2 "package2"
+	"package1"
+	p2 "package2"
 )
 ```
 
@@ -150,7 +150,7 @@ fmt.Println("Hello everyone", "in the world")
 fmt.Println("Goodbye")
 /*
 Prints: Hello everyone in the world
-        Goodbye
+		Goodbye
 */
 ```
 
@@ -207,11 +207,11 @@ As usual, a block of code is executed given that a condition is true.
 ```Go
 x := someNumber
 if x > 100 {
-  fmt.Println("We have a large number")
+	fmt.Println("We have a large number")
 } else if x > 20 {
-  fmt.Println("We have a medium number")
+	fmt.Println("We have a medium number")
 } else {
-  fmt.Println("We have a small number")
+	fmt.Println("We have a small number")
 }
 ```
 
@@ -221,7 +221,7 @@ It is possible to include a short variable declaration with our statements, but 
 
 ```Go
 if x := someNumber; x > 100 {
-  fmt.Println("We have a large number")
+	fmt.Println("We have a large number")
 }
 ```
 
@@ -233,11 +233,11 @@ We can use a `switch` statement to handle cases more elegantly.
 x := someNumber
 switch x {
 case 5:
-  fmt.Println("This is the maximum achievable!")
+	fmt.Println("This is the maximum achievable!")
 case 4:
-  fmt.Println("This is almost the maximum achievable!")
+	fmt.Println("This is almost the maximum achievable!")
 default:
-  fmt.Println("This is quite average.")
+	fmt.Println("This is quite average.")
 }
 ```
 
@@ -249,7 +249,7 @@ Go has only one looping construct - the `for` loop. The basic syntax is as follo
 
 ```Go
 for i := 1; i < 8; i++ {  // Shorthand for i += 1
-  statement
+	statement
 }
 ```
 
@@ -261,14 +261,14 @@ One way to generate random numbers in Go is as follows:
 package main
 
 import (
-  "fmt"
-  "math/rand"
-  "time"
+	"fmt"
+	"math/rand"
+	"time"
 )
 
 func main() {
-  rand.Seed(time.Now().UnixNano())
-  fmt.Println(rand.Intn(100))
+	rand.Seed(time.Now().UnixNano())
+	fmt.Println(rand.Intn(100))
 }
 ```
 
@@ -280,11 +280,11 @@ The syntax for functions is quite standard, which we define outside of the scope
 
 ```Go
 func specificCalculations(x int, y int) (int, int, float32) {
-  defer fmt.Println("Calculations complete.")
-  a := x + y
-  b := x * y
-  c := x/y
-  return a, b, c,
+	defer fmt.Println("Calculations complete.")
+	a := x + y
+	b := x * y
+	c := x/y
+	return a, b, c,
 }
 ```
 
@@ -337,12 +337,12 @@ Through dereferencing, we can change the value of a variable in a different scop
 
 ```Go
 func addTen(pointerForNumber *int) {
-  *pointerForNumber += 10
+	*pointerForNumber += 10
 }
 
 func main() {
-  x := 53
-  addTen(&x)
-  fmt.Println(x)  // Prints: 63
+	x := 53
+	addTen(&x)
+	fmt.Println(x)  // Prints: 63
 }
 ```
