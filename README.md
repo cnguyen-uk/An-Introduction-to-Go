@@ -80,7 +80,7 @@ import(
 
 ### Comments
 
-A line comment is created using `//`.
+An inline comment is created using `//`.
 
 Block comments start with `/*` and end with `*/`.
 
@@ -149,22 +149,22 @@ Here are some commonly used print functions:
 fmt.Println("Hello everyone", "in the world")
 fmt.Println("Goodbye")
 /*
-Prints: Hello everyone in the world
-        Goodbye
+Print: Hello everyone in the world
+       Goodbye
 */
 ```
 
 ```Go
 fmt.Print("I would like", " to say: ")
 fmt.Print("Hello")
-// Prints: I would like to say: Hello
+// Print: I would like to say: Hello
 ```
 
 ```Go
 fmt.Printf("The best food is %v from %v", verb1, verb2)
 /*
-Prints as expected, but with the %v verbs replaced by verb1 and verb2,
-in that order.  Other verbs apart from %v exist and can be seen in the
+This will print as expected, but with the %v verbs replaced by verb1 and
+verb2, in that order.  Other verbs apart from %v exist and can be seen in the
 documentation.
 */
 ```
@@ -302,7 +302,7 @@ To find the address of a variable, we can prefix it with the `&` operator.
 
 ```Go
 x := 152
-fmt.Println(&x)  // Prints the address of x in hexadecimal
+fmt.Println(&x)  // Print: address of x in hexadecimal
 ```
 
 ### Pointers
@@ -330,7 +330,7 @@ We can change the value stored in an address to a different value. We can prefix
 x := 152
 pointerForNumber := &x
 *pointerForNumber = 7
-fmt.Println(x)  // Prints: 7
+fmt.Println(x)  // Print: 7
 ```
 
 Through dereferencing, we can change the value of a variable in a different scope.
@@ -343,6 +343,6 @@ func addTen(pointerForNumber *int) {
 func main() {
 	x := 53
 	addTen(&x)
-	fmt.Println(x)  // Prints: 63
+	fmt.Println(x)  // Print: 63
 }
 ```
