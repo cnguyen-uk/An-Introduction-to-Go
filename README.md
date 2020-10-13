@@ -161,12 +161,12 @@ fmt.Print("Hello")
 ```
 
 ```Go
-fmt.Printf("The best food is %v from %v", verb1, verb2)
 /*
 This will print as expected, but with the %v verbs replaced by verb1 and
 verb2, in that order.  Other verbs apart from %v exist and can be seen in the
 documentation.
 */
+fmt.Printf("The best food is %v from %v", verb1, verb2)
 ```
 
 ### Sprinting
