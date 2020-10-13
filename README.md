@@ -131,7 +131,7 @@ If a variable is declared but not initialised, then Go will give it a default ze
 
 ### Constants
 
-Constants can’t be changed later in the program, which allows the developer to highlight their intention. These are declared similarly to variables, but can only be character, string, Boolean or numeric types.
+Constants can't be changed later in the program, which allows the developer to highlight their intention. These are declared similarly to variables, but can only be character, string, Boolean or numeric types.
 
 ```Go
 const gravity = 9.80665
@@ -194,7 +194,7 @@ var response string
 fmt.Scan(&response)
 ```
 
-This stores the user’s input as the variable `response`, which we can do anything with. Note that the `Scan()` function expects addresses as arguments, hence the `&`.
+This stores the user's input as the variable `response`, which we can do anything with. Note that the `Scan()` function expects addresses as arguments, hence the `&`.
 
 ## Conditionals
 
@@ -297,7 +297,7 @@ Go is a pass-by-value language, which means that it passes to functions the valu
 
 ### Addresses
 
-When a variable is declared, it is stored in computer memory. The space in the computer in which this is allocated is called an address. Every time that variable is used, the computer retrieves the value stored at the variable’s address. 
+When a variable is declared, it is stored in computer memory. The space in the computer in which this is allocated is called an address. Every time that variable is used, the computer retrieves the value stored at the variable's address. 
 To find the address of a variable, we can prefix it with the `&` operator.
 
 ```Go
