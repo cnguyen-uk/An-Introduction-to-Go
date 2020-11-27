@@ -7,11 +7,17 @@ There are plenty of good, comprehensive guides to using Go available online, suc
 
 ## Table of Contents
 
+- [Coding Standards](#coding-standards)
+  * [Indentation](#indentation)
+  * [Comments](#comments)
+    + [Inline Comments](#inline-comments)
+    + [Block Comments](#block-comments)
+  * [Quotes](#quotes)
+  * [Names](#names)
 - [Introduction](#introduction)
   * [Compiling](#compiling)
   * [Basic Go Structure](#basic-go-structure)
   * [Importing Multiple Packages](#importing-multiple-packages)
-  * [Comments](#comments)
 - [Variables and Types](#variables-and-types)
   * [Types](#types)
   * [Variables](#variables)
@@ -31,6 +37,61 @@ There are plenty of good, comprehensive guides to using Go available online, suc
   * [Addresses](#addresses)
   * [Pointers](#pointers)
   * [Dereferencing](#dereferencing)
+
+## Coding Standards
+
+All written code should follow a style guide to ensure that standards are kept consistent across any codebase and make code easier to read. Badly written code is difficult to scale, optimise, and debug. Such is the importance of high coding standards that this guide will discuss it as a separate section before any code is seen.
+
+We follow the standards in [Effective Go](https://golang.org/doc/effective_go.html). In particular, this section will act as a reference for language-specific best practices for indentation, comments, quotes, and names, since these can vary across different programming languages.
+
+### Indentation
+
+The standard is to use tabs for indented code.
+
+### Comments
+
+Comments begin with `//`. Block comments have the option to be wrapped with `/* */`.
+
+#### Inline Comments
+
+Inline comments should be used sparingly and not state the obvious. They should be separated by at least two spaces from the code and use commanding language rather than descriptive. For example, the following is preferred:
+
+```Go
+x = x + 1  // Compensate for border
+```
+
+As a comparison, the following should be avoided:
+
+```Go
+x = x + 1  // Compensates for border
+```
+
+#### Block Comments
+
+Block comments should be written in complete sentences, be indented with the code which it is commenting, and come *before* the code which it is commenting. Placing the comment after is merciless on a confused reader. Paragraphs are separated by a single line containing a single `//` (unless the block comment is already wrapped in `/* */`), and multi-sentence comments should have two spaces after a sentence-ending period (except after the final sentence).
+
+The norm is to use `//` for block comments. Usage of `/* */` is typically seen for package comments.
+
+```Go
+// This function triples a number.  It does not check for valid input.
+//
+// It's quite a nice function.
+func triple(x int) (int) {
+	return 3*x
+}
+```
+
+### Quotes
+
+Strings can be wrapped in either double quotes `"` or backticks `` ` ``. Double quotes will honour escaping characters, whereas backticks will not, i.e. they contain raw literal strings.
+
+Single quotes `'` are used to declare [runes](https://golang.org/doc/go1#rune).
+
+### Names
+
+Package names should be short, single-word, and lowercase.
+
+In general, names which start with an uppercase character will be visible outside of the package in which they were defined. The convention for multiword names is *PascalCase* or *camelCase*.
 
 ## Introduction
 
@@ -59,7 +120,7 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Println("Hello World")
+	fmt.Println("Hello World")
 }
 ```
 
@@ -77,12 +138,6 @@ import(
 	p2 "package2"
 )
 ```
-
-### Comments
-
-An inline comment is created using `//`.
-
-Block comments start with `/*` and end with `*/`.
 
 ## Variables and Types
 
@@ -284,7 +339,7 @@ func specificCalculations(x int, y int) (int, int, float32) {
 	a := x + y
 	b := x * y
 	c := x/y
-	return a, b, c,
+	return a, b, c
 }
 ```
 
