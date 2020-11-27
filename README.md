@@ -81,6 +81,13 @@ func triple(x int) (int) {
 }
 ```
 
+```Go
+/* This package does some things.  It also does some other things.
+
+Sometimes the things work.
+*/
+```
+
 ### Quotes
 
 Strings can be wrapped in either double quotes `" "` or backticks `` ` ` ``. Double quotes will honour escaping characters, whereas backticks will not, i.e. they contain raw literal strings.
