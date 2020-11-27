@@ -149,7 +149,7 @@ See the [documentation on types](https://golang.org/ref/spec#Types). Commonly us
 
 ### Variables
 
-Variable declaration may be done in a few ways (often in camelCase).
+Variable declaration may be done in a few ways.
 
 ```Go
 var variableName type
