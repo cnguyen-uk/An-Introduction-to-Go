@@ -90,7 +90,7 @@ Sometimes the things work.
 
 ### Quotes
 
-Strings can be wrapped in either double quotes `" "` or backticks `` ` ` ``. Double quotes will honour escaping characters, whereas backticks will not, i.e. they contain raw literal strings.
+Strings can be wrapped in either double quotes `" "` or backticks `` ` ` ``. Double quotes will honour escaping characters, whereas backticks will not, i.e. they contain raw string literals.
 
 Single quotes `' '` are used to declare [runes](https://golang.org/doc/go1#rune).
 
