@@ -193,7 +193,7 @@ If a variable is declared but not initialised, then Go will give it a default ze
 
 ### Constants
 
-Constants can't be changed later in the program, which allows the developer to highlight their intention. These are declared similarly to variables, but can only be character, string, Boolean or numeric types.
+Constants are variables which can't be changed later in the program, which allows the developer to highlight their intention. These are declared similarly to variables, but can only be character, string, Boolean or numeric types.
 
 ```Go
 const gravity = 9.80665
